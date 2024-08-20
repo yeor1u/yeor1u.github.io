@@ -14,7 +14,7 @@
 
   .navbar-brand {
     color: $primary;
-    @include script-font; // 폰트 적용
+    @include heading-font; // 폰트 적용
     &.active,
     &:active,
     &:focus,
