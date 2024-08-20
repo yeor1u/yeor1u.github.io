@@ -12,29 +12,29 @@ layout: default
         <div class="intro-text">
           <div class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
           <div class="intro-heading text-uppercase">{{ site.data.home.intro.heading }}</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#introduction">{{ site.data.home.intro.btn }}</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">{{ site.data.home.intro.btn }}</a>
         </div>
       </div>
     </header>
 
-    <!-- Introduction -->
-    <section id="introduction">
+    <!-- Services -->
+    <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.introduction.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.introduction.subheading }}</h3>
+            <h2 class="section-heading text-uppercase">{{ site.data.home.services.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.services.subheading }}</h3>
           </div>
         </div>
         <div class="row text-center">
-          {%- for introduce in site.data.home.introduction.service -%}
+          {%- for service in site.data.home.services.service -%}
           {% assign ws = '' %}
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="{{ introduce.icon }} fa-stack-1x fa-inverse"></i>
+              <i class="{{ service.icon }} fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">{{ introduce.heading }}</h4>
+            <h4 class="service-heading">{{ service.heading }}</h4>
             <p class="text-muted">{{ service.text }}</p>
           </div>
           {%- endfor -%}
@@ -43,28 +43,28 @@ layout: default
       </div>
     </section>
 
-    <!-- Manual Grid -->
-    <section class="bg-light" id="manual">
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.manual.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.manual.subheading }}</h3>
+            <h2 class="section-heading text-uppercase">{{ site.data.home.portfolio.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.portfolio.subheading }}</h3>
           </div>
         </div>
         <div class="row">
           {%- for project in site.projects -%}
           {% assign ws = '' %}
-          <div class="col-md-4 col-sm-6 manual-item">
-            <a class="manual-link" data-toggle="modal" href="#manualModal{{ project.id | replace: '/projects/', '' }}">
-              <div class="manual-hover">
-                <div class="manual-hover-content">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
               <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
             </a>
-            <div class="manual-caption">
+            <div class="portfolio-caption">
               <h4>{{ project.client }}</h4>
               <p class="text-muted">{{ project.category }}</p>
             </div>
@@ -75,20 +75,63 @@ layout: default
       </div>
     </section>
 
-    <!-- Download -->
-    <section class="bg-light" id="download">
+    <!-- About -->
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.download.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.download.subheading }}</h3>
+            <h2 class="section-heading text-uppercase">{{ site.data.home.about.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.about.subheading  }}</h3>
           </div>
         </div>
         <div class="row">
-          {%- for member in site.data.home.download.members -%}
+          <div class="col-lg-12">
+            <ul class="timeline">
+              {%- for time in site.data.home.about.timeline -%}
+              {% assign ws = '' %}
+              <li{% cycle '', ' class="timeline-inverted"' %}>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="{{ assets_path }}{{ time.image }}" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>{{ time.date }}</h4>
+                    <h4 class="subheading">{{ time.title }}</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">{{ time.text  }}</p>
+                  </div>
+                </div>
+              </li>
+              {%- endfor -%}
+              {% assign ws = '' %}
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>{{ site.data.home.about.end1 }}
+                    <br>{{ site.data.home.about.end2 }}
+                    <br>{{ site.data.home.about.end3 }}</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.team.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.team.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          {%- for member in site.data.home.team.members -%}
           {% assign ws = '' %}
           <div class="col-sm-4">
-            <div class="download-member">
+            <div class="team-member">
               <img class="mx-auto rounded-circle" src="{{ assets_path }}{{ member.img }}" alt="">
               <h4>{{ member.name }}</h4>
               <p class="text-muted">{{ member.role }}</p>
@@ -110,7 +153,7 @@ layout: default
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">{{ site.data.home.download.text }}</p>
+            <p class="large text-muted">{{ site.data.home.team.text }}</p>
           </div>
         </div>
       </div>
@@ -129,6 +172,51 @@ layout: default
           </div>
           {%-  endfor -%}
         {% assign ws = '' %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.contact.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.contact.subheading }}</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="{{ site.data.home.contact.name }}" required="required" data-validation-required-message="{{ site.data.home.contact.name-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="{{ site.data.home.contact.email }}" required="required" data-validation-required-message="{{ site.data.home.contact.email-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="{{ site.data.home.contact.phone }}" required="required" data-validation-required-message="{{ site.data.home.contact.phone-required }}">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="{{ site.data.home.contact.message }}" required="required" data-validation-required-message="{{ site.data.home.contact.message-required }}"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">{{ site.data.home.contact.btn }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ intro:
   heading: 지 우 개
   btn: Learn more!
 
-introduction:
+services:
   heading: Intro
   subheading: Lorem ipsum dolor sit amet consectetur.
   introduce:
@@ -17,11 +17,11 @@ introduction:
       heading: Web Security
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
-manual:
+portfolio:
   heading: Manual
   subheading: Lorem ipsum dolor sit amet consectetur.
 
-download:
+team:
   heading: Download
   subheading: Lorem ipsum dolor sit amet consectetur.
   members:

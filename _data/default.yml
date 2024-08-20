@@ -4,11 +4,11 @@ menu-string: Menu
 
 nav:
   - title: Introduction
-    url: '#introduction'
+    url: '#survices'
   - title: Manual
-    url: '#manual'
+    url: '#portfolio'
   - title: Download
-    url: '#download'
+    url: '#team'
 
 copyright: Copyright &copy; Your Website 2018
 

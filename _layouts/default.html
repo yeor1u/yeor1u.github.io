@@ -25,6 +25,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.google.com/share?selection.family=Do+Hyeon|Rammetto+One'>
     <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+Beginner:wght@700&display=swap" rel="stylesheet">
 
 
 
@@ -36,8 +37,8 @@
   </head>
 
   <body id="page-top">
-
-    <!-- Navigation -->
+    
+  <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ site.data.default.brand.name }}</a>
@@ -101,7 +102,7 @@
 {% assign ws = '' %}
 
     <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
-    <div class="manual-modal modal fade" id="manualModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -146,6 +147,10 @@
 
     <!-- Plugin JavaScript -->
     <script src="{{ assets_path }}vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ assets_path }}js/jqBootstrapValidation.js"></script>
+    <script src="{{ assets_path }}js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="{{ assets_path }}js/agency.min.js"></script>
