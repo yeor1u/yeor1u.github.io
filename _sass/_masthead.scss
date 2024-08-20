@@ -8,7 +8,7 @@ header.masthead {
   @include background-cover;
 
   .intro-text {
-    padding-top: 30px; /* 위쪽 공백을 줄입니다 */
+    padding-top: 50px; /* 위쪽 공백을 줄입니다 */
 
     .intro-lead-in {
       color: lightslategray;
@@ -31,7 +31,7 @@ header.masthead {
   }
 
   .btn-primary {
-    margin-top: -30px;
+    margin-top: -50px;
     padding: 15px 30px; /* 버튼 크기 조정 */
     font-size: 21px; /* 버튼 폰트 크기 조정 */
     margin-bottom: 60px;
