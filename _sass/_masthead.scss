@@ -1,4 +1,4 @@
-// Styling for the masthead
+/* Styling for the masthead */
 header.masthead {
   text-align: center;
   background-color: lightyellow;
@@ -10,7 +10,7 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px;
     .intro-lead-in {
-      color : lightslategray;
+      color: lightslategray;
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
@@ -18,16 +18,22 @@ header.masthead {
       @include script-font;
     }
     .intro-heading {
-      color : #4f77cd;
-      font-size: 70px;
-      font-weight: 700;
-      line-height: 50px;
+      /* 텍스트 스타일 제거 */
       margin-bottom: 25px;
       @include heading-font;
+
+      /* 이미지에 대한 스타일 추가 */
+      img.intro-image {
+        max-width: 100%; /* 컨테이너에 맞게 이미지 크기 조절 */
+        height: auto; /* 비율 유지 */
+        display: block; /* 블록 요소로 표시 */
+        margin: 0 auto; /* 중앙 정렬 */
+      }
     }
   }
 }
-@media(min-width:768px) {
+
+@media (min-width: 768px) {
   header.masthead {
     .intro-text {
       padding-top: 300px;
@@ -40,11 +46,15 @@ header.masthead {
         @include serif-font;
       }
       .intro-heading {
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
         margin-bottom: 50px;
-        @include heading-font;
+
+        /* 이미지에 대한 스타일 추가 */
+        img.intro-image {
+          max-width: 100%; /* 컨테이너에 맞게 이미지 크기 조절 */
+          height: auto; /* 비율 유지 */
+          display: block; /* 블록 요소로 표시 */
+          margin: 0 auto; /* 중앙 정렬 */
+        }
       }
     }
   }
