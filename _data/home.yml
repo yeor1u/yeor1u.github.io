@@ -7,20 +7,19 @@ services:
   heading: Intro
   subheading: 파일 삭제 서비스 '지우개'
   introduce:
-    - icon: fa fa-shopping-cart
-      heading: E-Commerce
+    - icon: fa fa-file
+      heading: file
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - icon: fa fa-laptop
-      heading: Responsive Design
+    - icon: fa fa-id-card
+      heading: id-card
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-    - icon: fa fa-lock
-      heading: Web Security
+    - icon: fa fa-eraser
+      heading: erase
       text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
 portfolio:
   heading: Manual
-  subheading: Lorem ipsum dolor sit amet consectetur.
-
+  subheading: How do you use '지우개'
 team:
   heading: Download
   subheading: Click here to download.
