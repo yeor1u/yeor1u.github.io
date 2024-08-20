@@ -20,12 +20,12 @@ header.masthead {
     .intro-heading {
       /* 텍스트 스타일 제거 */
       margin-bottom: 25px;
+      text-align: center;
       @include heading-font;
 
       /* 이미지에 대한 스타일 추가 */
       img.intro-image {
-        max-width: 100%; /* 컨테이너에 맞게 이미지 크기 조절 */
-        height: auto; /* 비율 유지 */
+        max-width: 50%; /* 컨테이너에 맞게 이미지 크기 조절 */
         display: block; /* 블록 요소로 표시 */
         margin: 0 auto; /* 중앙 정렬 */
       }
