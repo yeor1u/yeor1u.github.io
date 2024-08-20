@@ -23,7 +23,8 @@ header.masthead {
 
       /* 이미지에 대한 스타일 추가 */
       img.intro-image {
-        max-width: 100%; /* 컨테이너에 맞게 이미지 크기 조절 */
+        max-width: 150%; /* 이미지 크기를 150%로 설정 */
+        width: 150%; /* 컨테이너의 150% 크기로 설정 */
         display: block; /* 블록 요소로 표시 */
         margin: 0 auto; /* 중앙 정렬 */
       }
@@ -53,7 +54,8 @@ header.masthead {
        
         /* 이미지에 대한 스타일 추가 */
         img.intro-image {
-          max-width: 150%; /* 컨테이너에 맞게 이미지 크기 조절 */
+          max-width: 200%; /* 이미지 크기를 더 키움 */
+          width: 200%; /* 컨테이너의 200% 크기로 설정 */
           height: auto; /* 비율 유지 */
           display: block; /* 블록 요소로 표시 */
           margin: 0 auto; /* 중앙 정렬 */
