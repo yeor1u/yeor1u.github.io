@@ -9,7 +9,6 @@ header.masthead {
 
   .intro-text {
     padding-top: 10px; /* 위쪽 공백을 줄입니다 */
-    padding-bottom: 10px; /* 아래쪽 공백을 줄입니다 */
 
     .intro-lead-in {
       color: lightslategray;
@@ -41,7 +40,6 @@ header.masthead {
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
-      padding-top: 50px; /* 위쪽 공백을 줄입니다 */
       
       .intro-lead-in {
         font-size: 40px;
