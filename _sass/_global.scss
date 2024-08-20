@@ -54,11 +54,11 @@ section {
 // Button Styles
 .btn {
   @include heading-font;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .btn-xl {
-  font-size: 18px;
+  font-size: 22px;
   padding: 20px 40px;
 }
 
@@ -74,7 +74,7 @@ section {
   }
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+    box-shadow: 0 0 0 0.2rem rgba(254, 247, 55, 0.5) !important;
   }
 }
 
