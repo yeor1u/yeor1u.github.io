@@ -10,17 +10,12 @@ nav:
   - title: Download
     url: '#team'
 
-copyright: Copyright &copy; Your Website 2018
+copyright: Copyright &copy; ZeeWoo 2024
 
 social-buttons:
   - icon: fab fa-github
-    url: '#' 
-
-quicklinks:
-  - title: Privacy Policy
-    url: '#'
-  - title: Terms of Use
-    url: '#'
+  # 오픈소스 배포됨
+    url: 'https://github.com/Gyuwon-Yonsei-CPSS/ZeeWoo.git' 
 
 modal:
   date-string: 'Date: '

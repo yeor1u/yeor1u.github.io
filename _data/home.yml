@@ -5,7 +5,7 @@ intro:
 
 services:
   heading: Intro
-  subheading: Lorem ipsum dolor sit amet consectetur.
+  subheading: 파일 삭제 서비스 '지우개'
   introduce:
     - icon: fa fa-shopping-cart
       heading: E-Commerce
@@ -23,39 +23,5 @@ portfolio:
 
 team:
   heading: Download
-  subheading: Lorem ipsum dolor sit amet consectetur.
-  members:
-    - name: Kay Garland
-      role: Lead Designer
-      img: img/team/1.jpg
-      social-buttons:
-        - icon: fa fa-twitter
-          url: "#" 
-        - icon: fa fa-facebook
-          url: "#"
-        - icon: fa fa-linkedin
-          url: "#"
-        
-    - name: Larry Parker
-      role: Lead Marketer
-      img: img/team/2.jpg
-      social-buttons:
-        - icon: fa fa-twitter
-          url: "#"
-        - icon: fa fa-facebook
-          url: "#"
-        - icon: fa fa-linkedin
-          url: "#"
-
-    - name: Diana Pertersen
-      role: Lead Developer
-      img: img/team/3.jpg
-      social-buttons:
-        - icon: fa fa-twitter
-          url: "#"
-        - icon: fa fa-facebook
-          url: "#"
-        - icon: fa fa-linkedin
-          url: "#"
-
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+  subheading: Click here to download.
+  text: Null
