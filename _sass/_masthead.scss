@@ -10,7 +10,7 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px;
     .intro-lead-in {
-      color : #4f77cd;
+      color : lightslategray;
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
@@ -18,7 +18,7 @@ header.masthead {
       @include serif-font;
     }
     .intro-heading {
-      color : lightslategray;
+      color : #4f77cd;
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
