@@ -57,8 +57,9 @@ layout: default
           </div>
         </div>
         <div class="row">
+          {%- assign counter = 0 -%}  <!-- 루프 카운터를 설정합니다. -->
           {%- for project in site.projects -%}
-          {% assign ws = '' %}
+          {%- if counter < 3 -%}  <!-- 3개 항목만 렌더링하도록 조건을 추가합니다. -->
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
               <div class="portfolio-hover">
@@ -72,11 +73,13 @@ layout: default
               <p class="text-muted">{{ project.category }}</p>
             </div>
           </div>
+          {%- assign counter = counter | plus: 1 -%}  <!-- 루프 카운터를 증가시킵니다. -->
+          {%- endif -%}
           {%- endfor -%}
-        {% assign ws = '' %}
         </div>
       </div>
     </section>
+
 
     <!-- Team -->
     <section class="bg-light" id="team">
