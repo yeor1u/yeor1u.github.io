@@ -10,13 +10,6 @@ header.masthead {
   .intro-text {
     padding-top: 100px; /* 위쪽 공백을 줄입니다 */
 
-    .intro-lead-in {
-      color: lightslategray;
-      font-size: 22px;
-      font-family: 'Do Hyeon'; /* 폰트 스타일 수정 */
-      @include script-font;
-    }
-
     .intro-heading {
       text-align: center;
       @include heading-font;
@@ -29,10 +22,18 @@ header.masthead {
         margin: 0 auto; /* 중앙 정렬 */
       }
     }
+
+    .intro-lead-in {
+      color: lightslategray;
+      font-size: 22px;
+      font-family: 'Do Hyeon'; /* 폰트 스타일 수정 */
+      @include script-font;
+      margin-top: 20px; /* 이미지와의 간격을 위해 상단 마진을 추가 */
+    }
   }
 
   .btn-primary {
-    margin-top: -75px;
+    margin-top: 20px; /* lead-in과 버튼 사이의 간격 */
     padding: 14px 27px; /* 버튼 크기 조정 */
     font-size: 23px; /* 버튼 폰트 크기 조정 */
     margin-bottom: 175px;
@@ -43,12 +44,6 @@ header.masthead {
   header.masthead {
     .intro-text {
       
-      .intro-lead-in {
-        font-size: 40px;
-        line-height: 40px;
-        @include heading-font;
-      }
-
       .intro-heading {
        
         /* 이미지에 대한 스타일 추가 */
@@ -59,6 +54,13 @@ header.masthead {
           display: block; /* 블록 요소로 표시 */
           margin: 0 auto; /* 중앙 정렬 */
         }
+      }
+
+      .intro-lead-in {
+        font-size: 40px;
+        line-height: 40px;
+        @include heading-font;
+        margin-top: 30px; /* 이미지 아래에 위치하며 간격 조정 */
       }
     }
   }

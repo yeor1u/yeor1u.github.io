@@ -6,8 +6,7 @@ intro:
 services:
   heading: Intro
   subheading: 복구율 낮은 숨은 개인정보 삭제 서비스
-  introduce:
-    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+  introduce: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
 portfolio:
   heading: Manual
