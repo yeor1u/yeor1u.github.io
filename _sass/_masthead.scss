@@ -18,6 +18,7 @@ header.masthead {
     }
 
     .intro-heading {
+      margin-bottom : 10px;
       text-align: center;
       @include heading-font;
 
@@ -31,8 +32,8 @@ header.masthead {
   }
 
   .btn-primary {
-    padding: 17px 34px; /* 버튼 크기 조정 */
-    font-size: 22px; /* 버튼 폰트 크기 조정 */
+    padding: 15px 30px; /* 버튼 크기 조정 */
+    font-size: 21px; /* 버튼 폰트 크기 조정 */
     margin-bottom: 50px;
   }
 }
