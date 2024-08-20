@@ -24,7 +24,7 @@ header.masthead {
 
       /* 이미지에 대한 스타일 추가 */
       img.intro-image {
-        max-width: 120%; /* 컨테이너에 맞게 이미지 크기 조절 */
+        max-width: 110%; /* 컨테이너에 맞게 이미지 크기 조절 */
         display: block; /* 블록 요소로 표시 */
         margin: 0 auto; /* 중앙 정렬 */
       }
@@ -32,7 +32,7 @@ header.masthead {
   }
 
   .btn-primary {
-    padding: 20px 40px; /* 버튼 크기 조정 */
+    padding: 17px 34px; /* 버튼 크기 조정 */
     font-size: 22px; /* 버튼 폰트 크기 조정 */
   }
 }
@@ -47,7 +47,6 @@ header.masthead {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
-        margin-bottom: 10px; /* 아래쪽 공백을 줄입니다 */
         @include serif-font;
       }
 
