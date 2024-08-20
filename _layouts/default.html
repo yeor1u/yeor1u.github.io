@@ -101,7 +101,7 @@
 {% assign ws = '' %}
 
     <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="manual-modal modal fade" id="manualModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -146,10 +146,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="{{ assets_path }}vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="{{ assets_path }}js/jqBootstrapValidation.js"></script>
-    <script src="{{ assets_path }}js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="{{ assets_path }}js/agency.min.js"></script>
