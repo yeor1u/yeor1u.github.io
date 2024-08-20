@@ -6,48 +6,57 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   @include background-cover;
+
   .intro-text {
-    padding-top: 150px;
-    padding-bottom: 10px;
+    padding-top: 100px; /* 위쪽 공백을 줄입니다 */
+    padding-bottom: 10px; /* 아래쪽 공백을 줄입니다 */
+
     .intro-lead-in {
       color: lightslategray;
       font-size: 22px;
-      font-style: 'Do Hyeon';
+      font-family: 'Do Hyeon'; /* 폰트 스타일 수정 */
       line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 10px; /* 아래쪽 공백을 줄입니다 */
       @include script-font;
     }
+
     .intro-heading {
-      /* 텍스트 스타일 제거 */
-      margin-bottom: 25px;
+      margin-bottom: 25px; /* 아래쪽 공백을 설정 */
       text-align: center;
       @include heading-font;
 
       /* 이미지에 대한 스타일 추가 */
       img.intro-image {
         max-width: 120%; /* 컨테이너에 맞게 이미지 크기 조절 */
-
         display: block; /* 블록 요소로 표시 */
         margin: 0 auto; /* 중앙 정렬 */
       }
     }
+  }
+
+  .btn-primary {
+    margin-top: 20px; /* 버튼 윗쪽 공백을 줄입니다 */
+    padding: 15px 30px; /* 버튼 크기 조정 */
+    font-size: 18px; /* 버튼 폰트 크기 조정 */
   }
 }
 
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 50px;
+      padding-top: 200px; /* 위쪽 공백을 줄입니다 */
+      padding-bottom: 50px; /* 아래쪽 공백을 설정 */
+
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
-        margin-bottom: 25px;
+        margin-bottom: 10px; /* 아래쪽 공백을 줄입니다 */
         @include serif-font;
       }
+
       .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 50px; /* 아래쪽 공백을 설정 */
 
         /* 이미지에 대한 스타일 추가 */
         img.intro-image {
