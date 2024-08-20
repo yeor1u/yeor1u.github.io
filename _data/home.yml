@@ -1,16 +1,18 @@
 intro:
-  lead-in: ""
+  lead-in: "온라인 파쇄기"
   heading: 지 우 개
   btn: Check more!
 
 services:
   heading: Intro
-  subheading: 파일 삭제 서비스 '지우개'
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+  subheading: 복구율 낮은 숨은 개인정보 삭제 서비스
+  introduce:
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
 portfolio:
   heading: Manual
   subheading: How do you use '지우개'
+
 team:
   heading: Download
   subheading: Click here to download.

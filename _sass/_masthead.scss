@@ -45,9 +45,8 @@ header.masthead {
       
       .intro-lead-in {
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
-        @include serif-font;
+        @include heading-font;
       }
 
       .intro-heading {
