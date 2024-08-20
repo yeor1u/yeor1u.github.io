@@ -28,7 +28,7 @@ header.masthead {
       font-size: 22px;
       font-family: 'Do Hyeon'; /* 폰트 스타일 수정 */
       @include script-font;
-      margin-top: 20px; /* 이미지와의 간격을 위해 상단 마진을 추가 */
+      margin-top: -10px; /* 이미지와의 간격을 줄이기 위해 음수 마진 사용 */
     }
   }
 
@@ -43,7 +43,7 @@ header.masthead {
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
-      
+
       .intro-heading {
        
         /* 이미지에 대한 스타일 추가 */
@@ -60,7 +60,7 @@ header.masthead {
         font-size: 40px;
         line-height: 40px;
         @include heading-font;
-        margin-top: 30px; /* 이미지 아래에 위치하며 간격 조정 */
+        margin-top: -15px; /* 이미지 아래로 더 가깝게 이동 */
       }
     }
   }
