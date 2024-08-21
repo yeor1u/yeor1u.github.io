@@ -11,10 +11,10 @@ layout: default
       <div class="container">
         <div class="intro-text">
           <!-- 텍스트 대신 이미지로 교체 -->
-          <div class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
           <div class="intro-heading">
             <img src="{{ '/assets/img/ZW_logo_.png' | relative_url }}" alt="ZeeWoo Logo">
           </div>
+          <div class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">{{ site.data.home.intro.btn }}</a>
         </div>
       </div>
@@ -25,7 +25,7 @@ layout: default
     <section id="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12">
             <h2 class="section-heading text-uppercase">{{ site.data.home.services.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.services.subheading }}</h3>
             <h3 class="section-introduce text-muted">{{ site.data.home.services.introduce}}</h3>
@@ -33,7 +33,6 @@ layout: default
         </div>
         <div class="row text-center">
           {%- for service in site.data.home.services.service -%}
-          {% assign ws = '' %}
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -43,7 +42,6 @@ layout: default
             <p class="text-muted">{{ service.text }}</p>
           </div>
           {%- endfor -%}
-        {% assign ws = '' %}
         </div>
       </div>
     </section>
@@ -52,15 +50,15 @@ layout: default
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12">
             <h2 class="section-heading text-uppercase">{{ site.data.home.portfolio.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.portfolio.subheading }}</h3>
           </div>
         </div>
         <div class="row">
-          {%- assign counter = 0 -%}  <!-- 루프 카운터를 설정합니다. -->
+          {%- assign counter = 0 -%}
           {%- for project in site.projects -%}
-          {%- if counter < 3 -%}  <!-- 3개 항목만 렌더링하도록 조건을 추가합니다. -->
+          {%- if counter < 3 -%}
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ project.id | replace: '/projects/', '' }}">
               <div class="portfolio-hover">
@@ -74,26 +72,24 @@ layout: default
               <p class="text-muted">{{ project.category }}</p>
             </div>
           </div>
-          {%- assign counter = counter | plus: 1 -%}  <!-- 루프 카운터를 증가시킵니다. -->
+          {%- assign counter = counter | plus: 1 -%}
           {%- endif -%}
           {%- endfor -%}
         </div>
       </div>
     </section>
 
-
     <!-- Team -->
     <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12">
             <h2 class="section-heading text-uppercase">{{ site.data.home.team.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.team.subheading }}</h3>
           </div>
         </div>
         <div class="row">
           {%- for member in site.data.home.team.members -%}
-          {% assign ws = '' %}
           <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="{{ assets_path }}{{ member.img }}" alt="">
@@ -101,19 +97,16 @@ layout: default
               <p class="text-muted">{{ member.role }}</p>
               <ul class="list-inline social-buttons">
                 {%- for sm in member.social-buttons -%}
-                {% assign ws = '' %}
                 <li class="list-inline-item">
                   <a href="{{ sm.url }}">
                     <i class="{{ sm.icon }}"></i>
                   </a>
                 </li>
                 {%- endfor -%}
-              {% assign ws = '' %}
               </ul>
             </div>
           </div>
           {%- endfor -%}
-        {% assign ws = '' %}
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">

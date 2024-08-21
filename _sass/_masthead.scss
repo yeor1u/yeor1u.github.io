@@ -28,12 +28,12 @@ header.masthead {
       font-size: 22px;
       font-family: 'Do Hyeon'; /* 폰트 스타일 수정 */
       @include script-font;
-      margin-top: -100px; /* 이미지와의 간격을 줄이기 위해 음수 마진 사용 */
+      margin-top: -300px; /* 이미지와의 간격을 줄이기 위해 음수 마진 사용 */
     }
   }
 
   .btn-primary {
-    margin-top: 20px; /* lead-in과 버튼 사이의 간격 */
+    margin-top: 100px; /* lead-in과 버튼 사이의 간격 */
     padding: 14px 27px; /* 버튼 크기 조정 */
     font-size: 23px; /* 버튼 폰트 크기 조정 */
     margin-bottom: 175px;
