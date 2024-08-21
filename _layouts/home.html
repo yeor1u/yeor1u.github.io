@@ -9,7 +9,7 @@ layout: default
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <div class="intro-text">
+        <div class="intro-text text-center">
           <!-- 텍스트 대신 이미지로 교체 -->
           <div class="intro-heading">
             <img src="{{ '/assets/img/ZW_logo_.png' | relative_url }}" alt="ZeeWoo Logo">
@@ -29,11 +29,11 @@ layout: default
             <h3 class="section-subheading" style="font-size: 1.3em; line-height: 1.5;">{{ site.data.home.services.subheading }}</h3>
             <h3 class="section-introduce" style="color: #000; line-height: 1.5;">{{ site.data.home.services.introduce }}</h3>
             <p class="section-description" style="font-weight: bold; line-height: 1.6;">{{ site.data.home.services.description }}</p>
-            <div class="section-features" style="line-height: 1.5;">
+            <div class="section-features" style="line-height: 1.5; text-align: left;">
               <h4><strong>주요 기능</strong></h4>
-              <ul class="list-unstyled" style="text-align: left;">
+              <ul class="list-unstyled">
                 {%- for feature in site.data.home.services.features -%}
-                <li><strong>{{ feature | split: ': ' | first }}</strong>: {{ feature | split: ': ' | last }}</li>
+                <li><strong>{{ feature | split: ': ' | last }}</strong></li>
                 {%- endfor -%}
               </ul>
             </div>
