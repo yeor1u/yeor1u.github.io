@@ -61,7 +61,7 @@ header.masthead {
         font-size: 40px;
         line-height: 40px;
         @include heading-font;
-        margin-top: -200px; /* 이미지 아래로 더 가깝게 이동 */
+        margin-top: -100px; /* 이미지 아래로 더 가깝게 이동 */
       }
     }
   }
