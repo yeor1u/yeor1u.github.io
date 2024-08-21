@@ -1,4 +1,18 @@
 // Styling for the portfolio section
+#portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+#portfolio .section-heading {
+  margin-top: 0; /* 상단 여백 제거 */
+}
+
+#portfolio .section-subheading {
+  margin-top: 10px; /* 위쪽 여백 설정 */
+}
+
 #portfolio {
   .portfolio-item {
     right: 0;

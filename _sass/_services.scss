@@ -4,3 +4,17 @@
   text-transform: none;
   font-family:'Do Hyeon';
 }
+#services .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+#services .section-heading {
+  margin-top: 0; /* 상단 여백 제거 */
+}
+
+#services .section-subheading,
+#services .section-introduce {
+  margin-top: 10px; /* 위쪽 여백 설정 */
+}

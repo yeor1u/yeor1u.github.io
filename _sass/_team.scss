@@ -3,3 +3,16 @@
   margin: 15px 0;
   text-transform: none;
 }
+#team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+#team .section-heading {
+  margin-top: 0; /* 상단 여백 제거 */
+}
+
+#team .section-subheading {
+  margin-top: 10px; /* 위쪽 여백 설정 */
+}

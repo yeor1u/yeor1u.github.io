@@ -28,7 +28,7 @@ header.masthead {
       font-size: 22px;
       font-family: 'Do Hyeon'; /* 폰트 스타일 수정 */
       @include script-font;
-      margin-top: -300px; /* 이미지와의 간격을 줄이기 위해 음수 마진 사용 */
+      margin-top: -500px; /* 이미지와의 간격을 줄이기 위해 음수 마진 사용 */
     }
   }
 
