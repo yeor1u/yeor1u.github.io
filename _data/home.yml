@@ -34,4 +34,4 @@ portfolio:
 team:
   heading: "Download"
   subheading: "Click here to download 📥"
-  download_link: url("https://drive.google.com/file/d/1-fdSD-4A-yXwePAw9grmCuLC8SsRQrr7/view?usp=sharing")
+  download_link: "https://drive.google.com/file/d/1-fdSD-4A-yXwePAw9grmCuLC8SsRQrr7/view?usp=sharing"
