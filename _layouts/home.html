@@ -29,7 +29,8 @@ layout: default
             <h2 class="section-heading">{{ site.data.home.services.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.services.subheading }}</h3>
             <h3 class="section-introduce text-muted">{{ site.data.home.services.introduce }}</h3>
-          </div>
+            <h3 class="section-description text-muted">{{ site.data.home.services.description }}</h3>
+            <h3 class="section-features text-muted">{{ site.data.home.services.features }}</h3>
         </div>
         <div class="row text-center">
           {%- for service in site.data.home.services.service -%}
@@ -53,6 +54,8 @@ layout: default
           <div class="col-lg-12">
             <h2 class="section-heading">{{ site.data.home.portfolio.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.portfolio.subheading }}</h3>
+            <h3 class="section-usage_instructions text-muted">{{ site.data.home.portfolio.usage_instructions }}</h3>
+            <h3 class="section-use_cases  text-muted">{{ site.data.home.portfolio.use_cases }}</h3>
           </div>
         </div>
         <div class="row">
@@ -86,6 +89,7 @@ layout: default
           <div class="col-lg-12">
             <h2 class="section-heading">{{ site.data.home.team.heading }}</h2>
             <h3 class="section-subheading text-muted">{{ site.data.home.team.subheading }}</h3>
+            <h3 class="section-download_link">{{ site.data.home.team.download_link }}</h3>
           </div>
         </div>
         <div class="row">
